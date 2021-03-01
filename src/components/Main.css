@@ -1,0 +1,7 @@
+table{
+  border-collapse: collapse;
+}
+
+tbody tr{
+  margin: 10px;
+}

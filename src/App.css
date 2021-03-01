@@ -1,38 +1,76 @@
-.App {
+*{
+  box-sizing: border-box;
+  font-family: 'Amatic SC', cursive;
+}
+
+
+body{
+  max-width: 800px;
+  margin: auto;
+}
+
+th{
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.loading{
+  width: 800px;
+  font-size: 4rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+td{
+  padding: 1rem 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  height: 4rem;
+  gap: 30px;
+  padding: 4rem;
+}
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover{
+  animation: bounceLink 0.7s linear infinite;
+}
+
+@keyframes bounceLink{
+  0% {
+    font-size: 2rem;
+  }
+  50% {
+    font-size: 2.5rem;
+  }
+  100% {
+    font-size: 2rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button{
+  padding: 1rem;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid darkslategray;
+  color: darkslategray;
+  border-radius: 2px;
+}
+
+button:hover{
+  background-color: darkslategray;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+:focus{
+  outline: none;
 }
